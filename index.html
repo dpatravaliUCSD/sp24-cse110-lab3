@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab 2 Part 1</title>
+    <meta name="description" content="Music Club Meeting 2 Minutes">
+    <link rel="favicon" href="favicon.png">
+  </head>
+
+  <header id = "header">
+    <h1>Music Club Meeting Minutes</h1>
+    <h2>Today's topic: Jazz</h2>
+    <h3>Date: Wed, Apr 10</h3>
+    <nav>
+        <ul>
+            <li><a href="#header">Header</a></li>
+            <li><a href="#main">Body</a></li>
+            <li><a href="#footer">Footer</a></li>
+        </ul>
+    </nav>
+  </header>
+  <body>
+    <main id = "main">
+        <section>
+            <h4>Attendance</h4>
+            <ul>
+                <li><strong>Dhruv</strong></li>
+                <li><strong>Ryan</strong></li>
+                <li><strong>Brandon</strong></li>
+                <li><strong>Pranav</strong></li>
+            </ul>
+
+            <hr>
+
+            <h4><em>Agenda</em></h4>
+            <ol>
+                <li><i>Favorite jazz musician</i></li>
+                <li><i>Favorite jazz subgenre</i></li>
+                <li><i>Practice jazz soloing and trading 4's</i></li>
+            </ol>
+            
+            <hr>
+
+            <h4>Unfinished Business from Last Meeting</h4>
+            <p>Last week our meeting was about about rock and roll. We went over our favorite rock and roll bands, but not our favorite songs by those bands. If time permits, we will revisit this.</p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Some interesting jazz facts</a>
+            <br>
+            
+            <div>
+                <h4>Miscellaneous Coments</h4>
+                <ul>
+                    <li><b>Ryan</b>: Due to his infleunce and technical ability, Louis Armstrong was a better jazz musician than Dizzy Gillespie</li>
+                    <li><b>Brandon</b>: azz music is the best genre because of the amount of freedom it gives musicians to experiment with different techniques and soungs</li>
+                    <li><b>Pranav</b>: Jazz has declined as a genre partially due to the modern preference for streaming music rather than live performance, which is fundamental to the identity of jazz</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <span>
+        <img src="LouisArmstrong.jpeg" alt="Louis Armstrong">
+        <p>This is Louis Armstrong, arguably the greatest jazz musician ever. A fun fact is that not only was he an incredible trumpet player, but he also had a very distint gravelly voice that made his music very unique.</p>
+        <br>
+
+        <details>
+            <summary>About the featured artist</summary>
+            <p>Louis Armstrong was pretty lit and made good music. Isn't that neat.</p>
+        </details>
+    </span>
+    <br>
+    <br>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Subscription Form for Music Club Newsletter</legend>
+        
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+        
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate"><br><br>
+        
+                <label for="subscribe">Subscribe to newsletter</label>
+                <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+        
+                <label for="gender_male">Male</label>
+                <input type="radio" id="gender_male" name="gender" value="male">
+                <label for="gender_female">Female</label>
+                <input type="radio" id="gender_female" name="gender" value="female"><br><br>
+
+                <label for="info">Tell us about yourself and what you like about jazz:</label>
+                <textarea id="info" name="info"></textarea><br><br>
+        
+                <label for="section">Choose your ensemble section from the list:</label>
+                <input list="sections" id="section" name="section">
+                <datalist id="sections">
+                    <option value="Rhythmn">
+                    <option value="Woodwind">
+                    <option value="Brass">
+                </datalist><br><br>
+        
+                <label for="artist">Choose your favorite artist:</label>
+                <select id="artist" name="artist">
+                    <option value="armstrong">Louis Armstrong</option>
+                    <option value="gillespie">Dizzy Gillespie</option>
+                    <option value="coltrane">John Coltrane</option>
+                    <option value="davis">Miles Davis</option>
+                </select><br><br>
+        
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        
+    </div>
+    <br>
+    <div>
+        <video controls>
+            <source src="CSE110Lab2Vid.mp4">
+        </video>
+        <br>
+
+        <audio controls>
+            <source src="CSE110Lab2Vid.mp4">
+        </audio>
+
+    </div>
+  </body>
+  <footer id = "footer">
+    <h3>
+        Hope to see you at the next meeting. 
+    </h3>
+  </footer>
+</html>

@@ -1,0 +1,111 @@
+* { /* overall background color */
+    color: var(--text-color, hsl(232, 59%, 12%));
+    font-family: abril;
+}
+
+h1, h2 { /*centers my main headings*/
+    text-align: center;
+    font-family: jersey;
+}
+
+#header {
+    position: static;
+}
+
+body { /*sets standard background colo*/
+    background-color: rgba(198, 217, 254, 0.633);
+}
+
+#lastWeek { /* color for last week's meeting description */
+    color: rgb(100, 0, 102);
+}
+
+a[target="_blank"] { /*styles external links with blank target*/
+    color: blue;
+    text-decoration: underline;
+}
+
+a:hover { /*changes link cover when mouse hovers*/
+    color: darkblue;
+}
+
+.box { /* styling for box */
+    background-color: #0f8181;
+    padding: 10px;
+
+    margin: 8px, 8px, 8px, 8px;
+    padding: 12px, 12px, 12px, 12px;
+
+    border-style: dotted;
+    border-color: black;
+    border-width: 4px;
+    border-radius: 5px;
+}
+
+img { /* resizes image*/
+    width: 9cm;
+    height: 3in;
+}
+
+.form { /* styles the feedback form*/
+    width: 50vw;
+    height: 45vh;
+    max-width: 10in;
+    max-height: 10in;
+    margin: auto;
+    padding: 3%;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+button:hover { /*when hovering over a button*/
+    color: rgb(6, 6, 161);
+}
+
+button:active { /*when clicking a button*/
+    background-color: #ff0000;
+}
+
+@font-face { /*new font*/
+    font-family: 'jersey';
+    src: url('Jersey25-Regular.ttf');
+}
+
+@font-face { /*another font*/
+    font-family: 'abril';
+    src: url('AbrilFatface-Regular.ttf');
+}
+
+.navlist { /* making the navigation links a line*/
+    display: inline-block;
+}
+
+.attendancelist { /* making the attendance list a block*/
+    display: block;
+}
+
+#lastmeeting { /* styling last meeting notes*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.instrument { /*styling instruments div*/
+    border-style: solid;
+    border-color: black;
+}
+
+#instruments { /*grid for instruments section*/
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 5px;
+}
+
+@media (max-width: 1250px) { /*for when we have a smaller screen*/
+    img { 
+        width: 4cm;
+        height: 1.5in;
+    }
+}
+/*issue 1*/

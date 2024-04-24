@@ -4,6 +4,7 @@
     <title>Lab 2 Part 1</title>
     <meta name="description" content="Music Club Meeting 2 Minutes">
     <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header id="header">
@@ -12,20 +13,20 @@
         <h3>Date: Wed, Apr 10</h3>
         <nav>
             <ul>
-                <li><a href="#header">Header</a></li>
-                <li><a href="#main">Main Part</a></li>
-                <li><a href="#footer">Footer</a></li>
+                <li class="navlist"><a href="#header">Header</a></li>
+                <li class="navlist"><a href="#main">Main Part</a></li>
+                <li class="navlist"><a href="#footer">Footer</a></li>
             </ul>
         </nav>
     </header>
     <main id="main">
         <section>
             <h4>Attendance</h4>
-            <ul>
-                <li><strong>Dhruv</strong></li>
-                <li><strong>Ryan</strong></li>
-                <li><strong>Brandon</strong></li>
-                <li><strong>Pranav</strong></li>
+            <ul id="attendance">
+                <li class="attendancelist"><strong>Dhruv</strong></li>
+                <li class="attendancelist"><strong>Ryan</strong></li>
+                <li class="attendancelist"><strong>Brandon</strong></li>
+                <li class="attendancelist"><strong>Pranav</strong></li>
             </ul>
             <hr>
             <h4><em>Agenda</em></h4>
@@ -35,13 +36,27 @@
                 <li><i>Practice jazz soloing and trading 4's</i></li>
             </ol>
             <hr>
-            <h4>Unfinished Business from Last Meeting</h4>
-            <p>Last week our meeting was about rock and roll. We went over our favorite rock and roll bands, but not our favorite songs by those bands. If time permits, we will revisit this.</p>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Some interesting jazz facts</a>
+
+            <div id = "lastmeeting">
+                <div>
+                    <h4>Unfinished Business from Last Meeting</h4>
+                </div>
+
+                <div>
+                    <p id="lastWeek">Last week our meeting was about rock and roll. We went over our favorite rock and roll bands, but not our favorite songs by those bands. If time permits, we will revisit this.</p>
+                </div>
+
+                <div>
+                    <p> There is a lot to learn from last week's meeting about rock and roll that can be applied to this week's jazz meeting. As styles evolve they tend to draw from each other so keep an ear out for some cool overlaps.</p>
+                </div>
+            </div>
             <br>
-            <div>
+            <br>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Some interesting jazz facts</a>
+
+            <div class = "comments">
                 <h4>Miscellaneous Comments</h4>
-                <ul>
+                <ul">
                     <li><b>Ryan</b>: Due to his influence and technical ability, Louis Armstrong was a better jazz musician than Dizzy Gillespie</li>
                     <li><b>Brandon</b>: Jazz music is the best genre because of the amount of freedom it gives musicians to experiment with different techniques and sounds</li>
                     <li><b>Pranav</b>: Jazz has declined as a genre partially due to the modern preference for streaming music rather than live performance, which is fundamental to the identity of jazz</li>
@@ -49,7 +64,7 @@
             </div>
         </section>
     </main>
-    <div>
+    <div class = "box">
         <img src="LouisArmstrong.jpeg" alt="Louis Armstrong">
         <p>This is Louis Armstrong, arguably the greatest jazz musician ever. A fun fact is that not only was he an incredible trumpet player, but he also had a very distinct gravelly voice that made his music very unique.</p>
         <br>
@@ -60,7 +75,20 @@
     </div>
     <br>
     <br>
-    <div>
+    <div id = "instruments">
+        <div class = "instrument">
+            <h3>Drums give the music structure</h3>
+        </div>
+        <div class = "instrument">
+            <h3>Bass gives the ensembly rhythmn</h3>
+        </div>
+        <div class = "instrument">
+            <h3>Wind instruments provide melody and harmony</h3>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="form">
         <form>
             <fieldset>
                 <legend>Subscription Form for Music Club Newsletter</legend>
